@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leorite Express Transit LLC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#334155;
+}
+
+header{
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#0F766E;
+}
+
+.nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#1e293b;
+    font-weight:600;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(rgba(15,118,110,.8),rgba(2,132,199,.8)),
+    url('https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 30px;
+    background:white;
+    color:#0F766E;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+}
+
+/* SERVICES */
+
+.section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:50px;
+    color:#64748b;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h3{
+    color:#0F766E;
+    margin-bottom:10px;
+}
+
+/* WHY US */
+
+.why{
+    background:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.why img{
+    width:100%;
+    border-radius:20px;
+}
+
+.feature{
+    padding:12px 0;
+    font-size:18px;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stat h2{
+    color:#0F766E;
+    font-size:42px;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    color:white;
+    border-radius:30px;
+    padding:80px 20px;
+
+    background:
+    linear-gradient(rgba(15,118,110,.9),rgba(2,132,199,.9)),
+    url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.cta h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.why-grid{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.nav ul{
+    display:none;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+LEORITE EXPRESS TRANSIT
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Reliable Transportation.<br>
+Compassionate Care.
+</h1>
+
+<p>
+Providing safe, comfortable, and dependable transportation
+for medical appointments, ambulatory travel, and
+long-distance journeys.
+</p>
+
+<a href="#" class="btn">
+Schedule a Ride
+</a>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="title">Our Services</h2>
+
+<p class="subtitle">
+Professional transportation services focused on safety,
+comfort, and reliability.
+</p>
+
+<div class="services">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1584516150909-c43483ee7930?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>NEMT Transportation</h3>
+
+<p>
+Transportation for hospitals, clinics,
+dialysis centers, and medical appointments.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1576765608866-5b51046452be?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Ambulatory Transportation</h3>
+
+<p>
+Comfortable transportation for ambulatory
+passengers requiring dependable travel.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Long-Distance Transfers</h3>
+
+<p>
+Reliable transportation between cities,
+counties, and healthcare facilities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="section why">
+
+<div class="container">
+
+<div class="why-grid">
+
+<div>
+
+<h2 class="title" style="text-align:left;">
+Why Choose Leorite?
+</h2>
+
+<div class="feature">✓ Professional Drivers</div>
+<div class="feature">✓ Safe & Comfortable Vehicles</div>
+<div class="feature">✓ Flexible Scheduling</div>
+<div class="feature">✓ On-Time Service</div>
+<div class="feature">✓ Long-Distance Coverage</div>
+<div class="feature">✓ Patient-Focused Care</div>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="stats">
+
+<div class="stat">
+<h2>10K+</h2>
+<p>Completed Trips</p>
+</div>
+
+<div class="stat">
+<h2>99%</h2>
+<p>On-Time Arrivals</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Scheduling Support</p>
+</div>
+
+<div class="stat">
+<h2>50+</h2>
+<p>Coverage Areas</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="cta">
+
+<h2>Need Transportation?</h2>
+
+<p>
+Schedule safe and dependable transportation
+with Leorite Express Transit LLC today.
+</p>
+
+<a href="#" class="btn">
+Request Transportation
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Leorite Express Transit LLC</h3>
+
+<p>
+Non-Emergency Medical Transportation • Ambulatory Services • Long-Distance Transfers
+</p>
+
+<p>
+Phone: +1(414)324-8937 | Email: leoriteexpress@gmail.com
+</p>
+
+</footer>
+
+</body>
+</html>ok
